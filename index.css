@@ -1,0 +1,238 @@
+/* Fuente importada */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* Variables globales */
+:root {
+    --width: 150px;
+    --padding: 10px;
+    --bgcolor: rgb(52, 52, 52);
+    --hovercolor: rgb(23, 23, 23);
+    --width-collapsed: 50px;
+}
+
+/* Body */
+body {
+    background-color: #3d81c5;
+    font-family: Poppins, sans-serif;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    margin-left: var(--width-collapsed);
+}
+
+.body-expanded {
+    margin-left: var(--width);
+}
+
+#main-container {
+    color: white;
+}
+
+#sidemenu {
+    background-color: var(--bgcolor);
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    border-radius: 10px;
+    padding: 3px;
+    margin: 5px;
+    height:98.25vh;
+}
+
+
+#sidemenu a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Head */
+
+#sidemenu #header {
+    box-sizing: border-box;
+    border-bottom: solid 1px var(--hovercolor);
+}
+
+#sidemenu #header #menu-btn {
+    vertical-align: middle;
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px;
+    width: var(--width-collapsed);
+    box-sizing: border-box;
+}
+
+/*#sidemenu #header #menu-btn:hover {
+    background-color: var(--hovercolor);
+}*/
+
+#sidemenu #header #menu-btn .btn-hamburger {
+    background-color: #fff;
+    width: 100%;
+    height: 2px;
+    margin: 5px 0;
+}
+
+/* Items */
+
+#sidemenu #menu-items {
+    overflow: hidden;
+}
+
+#sidemenu #menu-items .item {
+    width: var(--width);
+}
+
+#sidemenu #menu-items .item .icon,
+#sidemenu #menu-items .item .abbrev-translation,
+#sidemenu #menu-items .item .icon-social,
+#sidemenu #menu-items .item .abbrev-curriculum,
+#sidemenu #menu-items .item .icon-download {
+    display: inline-block;
+}
+
+#sidemenu #menu-items .item .icon,
+#sidemenu #menu-items .item .title,
+#sidemenu #menu-items .item .abbrev-translation,
+#sidemenu #menu-items .item .title-translation {
+    font-size: 20px;
+}
+
+#sidemenu #menu-items .item .icon-social,
+#sidemenu #menu-items .item .title-social,
+#sidemenu #menu-items .item .abbrev-curriculum,
+#sidemenu #menu-items .item .title-curriculum,
+#sidemenu #menu-items .item .icon-download,
+#sidemenu #menu-items .item .title-download {
+    font-size: 13.5px;
+}
+
+#sidemenu #menu-items .item .icon,
+#sidemenu #menu-items .item .title,
+#sidemenu #menu-items .item .icon-social,
+#sidemenu #menu-items .item .title-social,
+#sidemenu #menu-items .item .abbrev-translation,
+#sidemenu #menu-items .item .title-translation,
+#sidemenu #menu-items .item .abbrev-curriculum,
+#sidemenu #menu-items .item .title-curriculum,
+#sidemenu #menu-items .item .icon-download,
+#sidemenu #menu-items .item .title-download {
+    vertical-align: middle;
+    overflow: hidden;
+    display: inline-block;
+}
+
+#sidemenu #menu-items .item a {
+    display: block;
+}
+
+/*#sidemenu #menu-items .item a:hover {
+    background-color: var(--hovercolor);
+}*/
+
+#sidemenu #menu-items .item .icon,
+#sidemenu #menu-items .item .abbrev-translation,
+#sidemenu #menu-items .item .icon-social,
+#sidemenu #menu-items .item .abbrev-curriculum,
+#sidemenu #menu-items .item .icon-download {
+    box-sizing: border-box;
+    padding: var(--padding);
+    width: var(--width-collapsed);
+}
+
+#sidemenu #menu-items .item .icon iconify-icon,
+#sidemenu #menu-items .item .icon-social iconify-icon,
+#sidemenu #menu-items .item .icon-download iconify-icon {
+    width: 100%;
+}
+
+#sidemenu #menu-items .item .title,
+#sidemenu #menu-items .item .title-social,
+#sidemenu #menu-items .item .title-translation,
+#sidemenu #menu-items .item .title-curriculum,
+#sidemenu #menu-items .item .title-download {
+    padding: var(--padding) 0;
+}
+
+#sidemenu .item.abbrev-curriculum,
+#sidemenu .item.icon-download {
+    margin-top: auto;
+}
+
+/* Separadores */
+#sidemenu #menu-items .item.separator {
+    height: 1px;
+    border-bottom: solid 1px var(--hovercolor);
+    margin: 15px 0;
+}
+
+#sidemenu #menu-items .item.separator,
+#sidemenu #menu-items .item.separator + .item {
+    position: absolute;
+    bottom: 0;
+}
+
+/* Menú expandido */
+.menu-expanded {
+    width: var(--width);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.menu-expanded #header #title {
+    display: inline-block;
+    width: calc(100% - 50%);
+    margin-right: -5px;
+    padding: var(--padding);
+}
+
+.menu-expanded #header #title span {
+
+    width: calc(var(--width) - var(--width-collapsed) - 5px);
+    overflow: hidden;
+    display: inline-block;
+}
+
+/* Menú colapsado */
+.menu-collapsed {
+    width: var(--width-collapsed);
+}
+
+.menu-collapsed #header #title {
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-collapsed .item {
+    width: 100px;
+}
+
+/* Aplicar estilos al contenedor principal */
+.content {
+    padding: 20px;
+    border-radius: 8px;
+    
+    margin: 0 auto;
+    max-width: 800px; /* O el ancho máximo deseado */
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Estilos para el título */
+.titlehome {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Estilos para el texto del contenido */
+.texthome {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #414141;
+}

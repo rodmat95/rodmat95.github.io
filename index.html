@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rodrigo Chavarry</title>
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css'>
+    <link rel='stylesheet'
+        href='https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap'>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="index.js" defer></script>
+    <script src="navigator.js" defer></script>
+</head>
+
+<body>
+    <nav id="sidemenu" class="menu-collapsed">
+        <!-- Header -->
+        <div id="header">
+            <div id="menu-btn">
+                <div class="btn-hamburger"></div>
+                <div class="btn-hamburger"></div>
+                <div class="btn-hamburger"></div>
+            </div>
+        </div>
+
+        <!-- Items -->
+        <div id="menu-items">
+            <!-- Translation -->
+            <div class="item">
+                <a href="#">
+                    <div class="abbrev-translation collapsed"><span>EN</span></div>
+                    <div class="title-translation expanded"><span>English</span></div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <div class="abbrev-translation collapsed"><span>ES</span></div>
+                    <div class="title-translation expanded"><span>Español</span></div>
+                </a>
+            </div>
+
+            <div class="item separator"></div>
+
+            <!-- Navigator -->
+            <div class="menu">
+                <div class="item">
+                    <a href="#" onclick="changeContent('home')">
+                        <div class="icon"><iconify-icon icon="ant-design:home-filled"></iconify-icon></div>
+                        <div class="title"><span>Home</span></div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#" onclick="changeContent('skills')">
+                        <div class="icon"><iconify-icon icon="mingcute:code-fill"></iconify-icon></div>
+                        <div class="title"><span>Skills</span></div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#" onclick="changeContent('projects')">
+                        <div class="icon"><iconify-icon icon="bi:image-fill"></iconify-icon></div>
+                        <div class="title"><span>Projects</span></div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="item separator"></div>
+
+            <div class="bottom-container">
+                <!-- Social -->
+                <div class="item">
+                    <a href="https://github.com/rodmat95">
+                        <div class="icon-social"><iconify-icon icon="bi:github"></iconify-icon></div>
+                        <div class="title-social"><span>github</span></div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="https://www.linkedin.com/in/rodrigochavarry/">
+                        <div class="icon-social"><iconify-icon icon="bi:linkedin"></iconify-icon></div>
+                        <div class="title-social"><span>linkedin</span></div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="mailto:rodmat0905@gmail.com?Subject=Propuesta%20de%20negocios">
+                        <div class="icon-social"><iconify-icon icon="ic:round-email"></iconify-icon></div>
+                        <div class="title-social"><span>gmail</span></div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="https://api.whatsapp.com/send?phone=51982199257">
+                        <div class="icon-social"><iconify-icon icon="fa6-brands:whatsapp"></iconify-icon></div>
+                        <div class="title-social"><span>whatsapp</span></div>
+                    </a>
+                </div>
+
+                <div class="item separator"></div>
+
+                <!-- Curriculum -->
+                <div class="item">
+                    <div>
+                        <div class="abbrev-curriculum collapsed"><span>CV</span></div>
+                        <div class="title-curriculum expanded"><span>Curriculum</span></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="public\curriculum\Curriculum Vitae - Rodrigo Chavarry.pdf">
+                        <div class="icon-download collapsed"><iconify-icon icon="ic:round-download"></iconify-icon>
+                        </div>
+                        <div class="title-download expanded"><span>Download</span></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content" id="home" style="display: block;">
+        <h3 class="titlehome">Sobre mi</h3>
+        <p class="texthome">Soy Rodrigo Chavarry, un apasionado estudiante de Desarrollo de Software. Mi enfoque en la
+            programación se caracteriza por la meticulosidad y la responsabilidad, y destaco en el manejo de bases de
+            datos. La capacidad de la programación para transformar procesos y automatizar tareas me llena de
+            entusiasmo. Aspiro a impulsar el avance de las tecnologías y, además de la programación, me atraen el mundo
+            del hardware, los deportes de riesgo y los videojuegos. Creo en la importancia de los hechos por encima de
+            las palabras, y estoy emocionado por el camino que yace ante mí.</p>
+    </div>
+
+    <div class="content" id="skills" style="display: none;">
+        Contenido de la página de habilidades
+    </div>
+
+    <div class="content" id="projects" style="display: none;">
+        Contenido de la página de proyectos
+    </div>
+
+</body>
+
+</html>
