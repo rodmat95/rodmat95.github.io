@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<*>
+    <meta charset="UTF-8">
+    <title>Rodrigo Chavarry</title>
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css'>
+    <link rel='stylesheet'
+        href='https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap'>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    </head>
+
+    <body>
+        <!-- partial:index.partial.html -->
+        <nav class="sidebar close">
+            <header>
+
+                <div class="image-text">
+                    <span class="image">
+                        <img src="https://lh3.googleusercontent.com/pw/AIL4fc-mvgp5_LaL_D8ED9BDn-GHNgy3ZijXKZhJaXRup-P2QZ5PZRfa98Bc_MLuhEsh_zi1nBlg8Y6MWTXoIFlTIZuE6VUVO6JCI3WSBqO8FT3UZuIPwopOIkDtjBiRUa4sQLh-4qBMkocQRLXd-8jfC0W9bTvYl_KH6Cw5jIluk-a8lc3sS1tmQOtp0-F9QOp9K2PUF6mFxVBgciQjuRm1XVDrhS4P5zqtrFcO8qu8vMJIx7PI2GqnjxcnJ3eiu8WSK2lu9K5gWbH5qhchU4ssJ2OG7wX9X4wp2wTIYoWFKhQfu5mpjmPxhzrheLOcZhvPW-k-C0NznaonL-ohXLidMM3NopGHXGNpftLGzYEYFjZdXZ4MNlqZhuVcQKwCFYCI_ysxak4AYsJt1zR8IimEZ50Ofibcd6GlJn1G3Kkq_DSz299CYGvIwaerSmzalSaQrOyuUgMv4Ndb5ehBc0-4ncX5naopjoIT_leOjb1v4grnDgvpqEP3-CmKDfpdhDeO25oeYycUt6Ob7lIdIta-fGQ8mSvulOxrK3oQkwQhUh9zarJjZpLAgu3MrZS_Kupa_X6KBvgNPu02TGTNC2MisY-8Q3oiFvHx3bldBe3kJnKob80bzJT_MXBIqbfBo24TfI6NMhdLe86kpZXQoFaUApV91ZinDFH9k5G0Chcp4A33vBnmh2blsjM6cDcSTPLt-ZUj5Oz4Zg-2BHj4cpfqWuWhOFax71TEA3bZcQhvB7Xuzuja6GPSqmxMACA8lsxPO_Y4shodKa3-_fakXCLOEzQ57M_ZasHOkJg8jGRHPSh2k7BrTlB_tQbT9cN97bnZNRjQRTHM7WF0aLU_Lki7DZlca5BGFU0s34SlFSMTBwflD8vcFwnwPyYprd7USmTQz1RPJpfyryVx3vXv2aRzO0Q60iSyHj2kMmd8sL01h6SGOuAOZ9blTWkFWxIS=w720-h718-s-no?authuser=0"
+                            alt="">
+                    </span>
+
+                    <div class="text logo-text">
+                        <span class="name">Rodrigo Chavarry</span>
+                        <span class="profession">Progamador Web</span>
+                    </div>
+                </div>
+
+                <i class='bx bx-chevron-right toggle'></i>
+            </header>
+
+            <div class="menu-bar">
+                <div class="menu">
+
+                    <ul class="menu-links">
+
+                        <li class="nav-link">
+                            <a href="#" class="nav-list">
+                                <i class='icon'><iconify-icon icon="lucide:languages"></iconify-icon></i>
+                                <span class="text nav-text">Idiomas</span>
+                                <i class='icon dropdown-arrow'><iconify-icon icon="bxs:right-arrow"></iconify-icon></i>
+                                <input type="checkbox" class="dropdown-check">
+                            </a>
+                            <div class="submenu-content">
+                                <ul class="submenu-drop">
+                                    <li class="submenu-link">
+                                        <a href="index.html" class="submenu-anchor">
+                                            <i class='icon'>
+                                                <iconify-icon icon="healthicons:e"></iconify-icon>
+                                                <iconify-icon icon="healthicons:s"></iconify-icon>
+                                            </i>
+                                            <span class="text nav-text">Español</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="submenu-link">
+                                        <a href="english.html" class="dsubmenu-anchor">
+                                            <i class='icon'>
+                                                <iconify-icon icon="healthicons:e"></iconify-icon>
+                                                <iconify-icon icon="healthicons:n"></iconify-icon>
+                                            </i>
+                                            <span class="text nav-text">English</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-link">
+                            <a href="#" onclick="changeContent('home')" class="nav-list">
+                                <i class='icon'><iconify-icon icon="bxs:home"></iconify-icon></i>
+                                <span class="text nav-text">Inicio</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-link">
+                            <a href="#" onclick="changeContent('skills')" class="nav-list">
+                                <i class='icon'><iconify-icon icon="ph:code-bold"></iconify-icon></iconify-icon></i>
+                                <span class="text nav-text">Habilidades</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-link">
+                            <a href="#" onclick="changeContent('projects')" class="nav-list">
+                                <i class='icon'><iconify-icon icon="octicon:project-roadmap-16"></iconify-icon></i>
+                                <span class="text nav-text">Proyectos</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="bottom-content">
+
+                    <li class="search-box">
+                        <i class='bx bx-search icon'></i>
+                        <input type="text" placeholder="Search...">
+                    </li>
+
+                    <li class="">
+                        <a href="public\curriculum\Curriculum Vitae - Rodrigo Chavarry.pdf">
+                            <i class='icon'><iconify-icon icon="ic:round-download"></iconify-icon></i>
+                            <span class="text nav-text">Curriculum</span>
+                        </a>
+                    </li>
+
+                    <li class="mode">
+                        <div class="sun-moon">
+                            <i class='bx bx-moon icon moon'></i>
+                            <i class='bx bx-sun icon sun'></i>
+                        </div>
+                        <span class="mode-text text">Oscuro</span>
+
+                        <div class="toggle-switch">
+                            <span class="switch"></span>
+                        </div>
+                    </li>
+                </div>
+            </div>
+
+        </nav>
+
+        <section class="content" id="home" style="display: block;">
+            <div class="title">SOBRE MÍ</div>
+            <div class="text">Soy Rodrigo Chavarry, un apasionado estudiante de Desarrollo de Software. Mi enfoque en la
+                programación se caracteriza por la meticulosidad y la responsabilidad, y destaco en el manejo de bases de
+                datos. La capacidad de la programación para transformar procesos y automatizar tareas me llena de
+                entusiasmo. Aspiro a impulsar el avance de las tecnologías y, además de la programación, me atraen el mundo
+                del hardware, los deportes de riesgo y los videojuegos. Creo en la importancia de los hechos por encima de
+                las palabras, y estoy emocionado por el camino que yace ante mí.</div>
+        </section>
+
+        <section class="content" id="skills" style="display: block;">
+            <div class="title">MIS HABILIDADES</div>
+            <div class="text">Contenido de la página de habilidades</div>
+        </section>
+
+        <section class="content" id="projects" style="display: block;">
+            <div class="title"></div>
+            <div class="text">Contenido de la página de proyectos</div>
+        </section>
+        <!-- partial -->
+        <script src="./js/index.js"></script>
+        <script src="./js/navigator.js" defer></script>
+        <script src="./js/sublist.js" defer></script>
+
+    </body>
+
+</html>
