@@ -1,0 +1,31 @@
+{
+    "fixed-menu":{
+        "fixed-text": "Idiomas"
+    },
+    "profile":{
+        "profession": "Progamador Web"
+    },
+    "home":{
+        "nav_home": "Inicio",
+        "about_title": "SOBRE MÍ",
+        "about_text": "Soy Rodrigo Chavarry, un apasionado estudiante de Desarrollo de Software. Mi enfoque en la programación se caracteriza por la meticulosidad y la responsabilidad, y destaco en el manejo de bases de datos. La capacidad de la programación para transformar procesos y automatizar tareas me llena de entusiasmo. Aspiro a impulsar el avance de las tecnologías y, además de la programación, me atraen el mundo del hardware, los deportes de riesgo y los videojuegos. Creo en la importancia de los hechos por encima de las palabras, y estoy emocionado por el camino que yace ante mí."
+    },
+    "skills":{
+        "nav_skills": "Habilidades",
+        "skills_title": "MIS HABILIDADES",
+        "skills_text": "Contenido de la página de habilidades"
+    },
+    "projects":{
+        "nav_projects": "Proyectos",
+        "projects_title": "",
+        "projects_text": "Contenido de la página de proyectos"
+    },
+    "certifications":{
+        "nav_certifications": "Certificaciones",
+        "certifications_title": "",
+        "certifications_text": "Contenido de la página de Certificaciones"
+    },
+    "mode":{
+        "mode-text": "Oscuro"
+    }
+}

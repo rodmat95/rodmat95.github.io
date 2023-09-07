@@ -1,0 +1,31 @@
+{
+    "fixed-menu":{
+        "fixed-text": "Languages"
+    },
+    "profile":{
+        "profession": "Web developer"
+    },
+    "home":{
+        "nav_home": "Home",
+        "about_title": "ABOUT ME",
+        "about_text": "I am Rodrigo Chavarry, a passionate Software Development student. My focus in programming is characterized by meticulousness and responsibility, and I excel in database management. The ability of programming to transform processes and automate tasks fills me with enthusiasm. I aspire to drive the advancement of technologies, and in addition to programming, I am drawn to the world of hardware, extreme sports, and video games. I believe in the importance of actions over words, and I am excited about the path that lies ahead of me."
+    },
+    "skills":{
+        "nav_skills": "Skills",
+        "skills_title": "MY SKILLS",
+        "skills_text": "Content of the skills page"
+    },
+    "projects":{
+        "nav_projects": "Projects",
+        "projects_title": "",
+        "projects_text": "Content of the projects page"
+    },
+    "certifications":{
+        "nav_certifications": "Certifications",
+        "certifications_title": "",
+        "certifications_text": "Content of the certifications page"
+    },
+    "mode":{
+        "mode-text": "Dark"
+    }
+}
