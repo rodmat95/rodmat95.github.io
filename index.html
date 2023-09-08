@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<*>
+    <meta charset="UTF-8">
+    <title>Rodrigo Chavarry</title>
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css'>
+    <link rel='stylesheet'
+        href='https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap'>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    </head>
+    
+    <body>
+        <ul id="fixed-menu">
+            <li>
+                <i class='icon'><iconify-icon icon="lucide:languages"></iconify-icon></i>
+                <span class="text nav-text" data-section="fixed-menu" data-value="fixed-text">Idiomas</span>
+                <ul id="submenu">
+                    <li>
+                        <a href="#" data-language="es">
+                            <span class="text nav-text">Español</span>
+                            <i>
+                                <iconify-icon icon="healthicons:e"></iconify-icon>
+                                <iconify-icon icon="healthicons:s"></iconify-icon>
+                            </i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#" data-language="en">
+                            <span class="text nav-text">English</span>
+                            <i>
+                                <iconify-icon icon="healthicons:e"></iconify-icon>
+                                <iconify-icon icon="healthicons:n"></iconify-icon>
+                            </i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#" data-language="fr">
+                            <span class="text nav-text">Français</span>
+                            <i>
+                                <iconify-icon icon="healthicons:f"></iconify-icon>
+                                <iconify-icon icon="healthicons:r"></iconify-icon>
+                            </i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#" data-language="ru">
+                            <span class="text nav-text">Русский</span>
+                            <i>
+                                <iconify-icon icon="healthicons:r"></iconify-icon>
+                                <iconify-icon icon="healthicons:u"></iconify-icon>
+                            </i>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        
+        <nav class="sidebar close">
+            <header>
+                <div class="image-text">
+                    <span class="image">
+                        <img src="https://creatorspace.imgix.net/users/cljiic2oo054hs8010ld7nfjz/fP6haLeASWD302lK-Picsart_22-08-11_09-08-54-218.jpg?w=300&h=300"
+                            alt="Profile">
+                    </span>
+                    <div class="text logo-text">
+                        <span class="name">Rodrigo Chavarry</span>
+                        <span class="profession" data-section="profile" data-value="profession">Programador Web</span>
+                    </div>
+                </div>
+                <i class='bx bx-chevron-right toggle'></i>
+            </header>
+            
+            <div class="menu-bar">
+                <div class="menu">
+                    <ul class="menu-links">
+                        <li class="nav-link">
+                            <a href="#" onclick="changeContent('home')" class="nav-list">
+                                <i class='icon'><iconify-icon icon="bxs:home"></iconify-icon></i>
+                                <span class="text nav-text" data-section="home" data-value="nav_home">Inicio</span>
+                            </a>
+                        </li>
+                        
+                        <li class="nav-link">
+                            <a href="#" onclick="changeContent('skills')" class="nav-list">
+                                <i class='icon'><iconify-icon icon="ph:code-bold"></iconify-icon></iconify-icon></i>
+                                <span class="text nav-text" data-section="skills" data-value="nav_skills">Habilidades</span>
+                            </a>
+                        </li>
+                        
+                        <li class="nav-link">
+                            <a href="#" onclick="changeContent('projects')" class="nav-list">
+                                <i class='icon'><iconify-icon icon="octicon:project-roadmap-16"></iconify-icon></i>
+                                <span class="text nav-text" data-section="projects" data-value="nav_projects">Proyectos</span>
+                            </a>
+                        </li>
+                        
+                        <li class="nav-link">
+                            <a href="#" onclick="changeContent('certifications')" class="nav-list">
+                                <i class='icon'><iconify-icon icon="icon-park-outline:certificate"></iconify-icon></i>
+                                <span class="text nav-text" data-section="certifications" data-value="nav_certifications">Certificaciones</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bottom-content">
+                    <li class="curriculum">
+                        <a target="_blank" href="public\pdfs\Curriculum Vitae - Rodrigo Chavarry.pdf">
+                            <i class='icon'><iconify-icon icon="ic:round-download"></iconify-icon></i>
+                            <span class="text nav-text" data-section="curriculum" data-value="curriculum-text">Currículum</span>
+                        </a>
+                    </li>
+                    
+                    <li class="mode">
+                        <div class="sun-moon">
+                            <i class='bx bx-moon icon moon'></i>
+                            <i class='bx bx-sun icon sun'></i>
+                        </div>
+                        <span class="mode-text text" data-section="mode" data-value="mode-text">Oscuro</span>
+                        <div class="toggle-switch">
+                            <span class="switch"></span>
+                        </div>
+                    </li>
+                </div>
+            </div>
+        </nav>
+        
+        <section class="content" id="home" style="display: block;">
+            <div class="title" data-section="home" data-value="about_title">SOBRE MÍ</div>
+            <div class="text" data-section="home" data-value="about_text">Soy Rodrigo Chavarry, un apasionado estudiante de Desarrollo de Software. Mi enfoque en la
+                programación se caracteriza por la meticulosidad y la responsabilidad, y destaco en el manejo de bases de
+                datos. La capacidad de la programación para transformar procesos y automatizar tareas me llena de
+                entusiasmo. Aspiro a impulsar el avance de las tecnologías y, además de la programación, me atraen el mundo
+                del hardware, los deportes de riesgo y los videojuegos. Creo en la importancia de los hechos por encima de
+                las palabras, y estoy emocionado por el camino que yace ante mí.</div>
+        </section>
+        
+        <section class="content" id="skills" style="display: block;">
+            <div class="title" data-section="skills" data-value="skills_title">MIS HABILIDADES</div>
+            <div class="text" data-section="skills" data-value="skills_text">Contenido de la página de habilidades</div>
+        </section>
+        
+        <section class="content" id="projects" style="display: block;">
+            <div class="title" data-section="projects" data-value="projects_title"></div>
+            <div class="text" data-section="projects" data-value="projects_text">Contenido de la página de proyectos</div>
+        </section>
+        
+        <section class="content" id="certifications" style="display: block;">
+            <div class="title" data-section="certifications" data-value="certifications_title"></div>
+            <div class="text" data-section="certifications" data-value="certifications_text">Contenido de la página de Certificaciones</div>
+        </section>
+        
+        <footer class="social">
+            <input type="checkbox" class="social-open" name="social-open" id="social-open" />
+            <label class="social-open-button" for="social-open">
+                <iconify-icon icon="mdi:contact"></iconify-icon>
+            </label>
+            <a class="social-item" target="_blank" href="https://github.com/rodmat95">
+                <iconify-icon icon="mdi:github"></iconify-icon>
+            </a>
+            <a class="social-item" target="_blank" href="https://www.linkedin.com/in/rodrigochavarry">
+                <iconify-icon icon="mdi:linkedin"></iconify-icon>
+            </a>
+            <a class="social-item" target="_blank" href="mailto:rodmat0905@gmail.com?Subject=Propuesta%20de%20negocios">
+                <iconify-icon icon="mdi:gmail"></iconify-icon>
+            </a>
+            <a class="social-item" target="_blank" href="https://api.whatsapp.com/send?phone=51982199257">
+                <iconify-icon icon="mdi:whatsapp"></iconify-icon>
+            </a>
+            <a class="social-item" target="_blank" href="https://www.instagram.com/rc_095">
+                <iconify-icon icon="mdi:instagram"></iconify-icon>
+            </a>
+            <a class="social-item" target="_blank" href="https://twitter.com/chrodrigoalonso">
+                <iconify-icon icon="mdi:twitter"></iconify-icon>
+            </a>
+        </footer>
+        
+        <!-- partial -->
+        <script src="./js/index.js"></script>
+        <script src="./js/navigator.js" defer></script>
+        <script src="./js/translator.js" defer></script>
+    
+    </body>
+
+</html>
